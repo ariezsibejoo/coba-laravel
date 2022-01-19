@@ -23,8 +23,8 @@
     </style>
   </head>
   <body>
-    
-@include('dashboard.layouts.header')
+    @include('sweetalert::alert')
+    @include('dashboard.layouts.header')
 
 <div class="container-fluid">
   <div class="row">

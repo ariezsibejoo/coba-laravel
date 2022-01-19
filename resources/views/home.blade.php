@@ -5,9 +5,9 @@
 
 <div class="row">
     <div class="col md-6">
-<form>
-    <label for="date">Tanggal lahir</label>
-    <input class="form-control" type="date" placeholder="Default input" aria-label="default input example">
-</form>
+        <button class="first">First</button>
+        <button class="second">second</button>
+        <button class="third">third</button>
 </div>
+
 @endsection

@@ -8,6 +8,8 @@ use Cviebrock\EloquentSluggable\Services\SlugService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
+use RealRashid\SweetAlert\Facades\Alert;
+
 
 
 // ini cara bikinnya
@@ -70,7 +72,6 @@ class DashboardPostController extends Controller
         $validatedData['excerpt'] = Str::limit(strip_tags($request->body), 100);
 
         Post::create($validatedData);
-
         return redirect('/dashboard/posts')->with('success', 'New post has been added');
     }
 

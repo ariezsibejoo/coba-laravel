@@ -36,8 +36,11 @@
               @method('delete')
               @csrf
 
-              <button class="badge bg-danger border-0" onclick="return confirm('are you sure?')"><span data-feather="x-circle"></span></button>
-              </form>
+              {{-- <button class="badge bg-danger border-0" onclick="return confirm('are you sure?')"><span data-feather="x-circle"></span></button> --}}
+              
+              <button class="badge bg-danger border-0 hapus" onclick="return confirm('are you sure?')"><span data-feather="x-circle"></span></button>
+            </form>
+            {{-- <button class="hapus">hapus</button> --}}
             </td>
           </tr>
               
@@ -47,6 +50,5 @@
   </div>
 
 
-
-
+  
 @endsection

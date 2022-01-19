@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Cviebrock\EloquentSluggable\Services\SlugService;
 
 class AdminCategoryController extends Controller
@@ -97,11 +99,11 @@ class AdminCategoryController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  \App\Models\category  $category
+     * @param  \App\Models\post  $post
      * @return \Illuminate\Http\Response
      */
-    public function destroy(category $category)
+    public function destroy(category $category, Post $post)
     {
-        //
     }
 
 
